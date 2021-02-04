@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #f2e7e7;
+  background: #1c1010;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 113px 200px 200px 200px;
+
+  grid-template-areas:
+    "header     header          header              header"
+    "lateral   contenido        contenido           contenido"
+    "lateral   contenido        contenido           contenido"
+    "lateral   parte-inferior   parte-inferior      parte-inferior";
+}
+
+/*clase header*/
+.header {
+  height: 100px;
+  line-height: 100px;
+  background: #1c1010;
+  border: 2px solid white;
+  grid-column: header;
+  grid-row: header;
+}
+
+/*lateral*/
+.lateral {
+  grid-area: lateral;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+p {
+  margin-top: 20px;
+  position: relative;
+  top: 40px;
+}
+/*contenido*/
+.contenido {
+  grid-area: contenido;
+  background-image: url("surfing\ 01.jpg");
+  background-size: cover;
+  border: 2px solid white;
+}
+img {
+  max-width: 900px;
+  background-size: cover;
+}
+
+/*parte final*/
+.parte-final {
+  grid-area: parte-final;
+  border: 2px solid white;
+}
+
+.header ul li {
+  display: inline-flex;
+  float: right;
+  margin-left: 20px;
+  position: relative;
+  right: 3%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover,
+p:hover {
+  color: aqua;
+  cursor: pointer;
+}
