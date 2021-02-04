@@ -1,0 +1,51 @@
+body {
+  background: black;
+}
+
+.contenedor {
+  background-image: url("foto.jpg");
+  width: 95% auto;
+  height: 200px;
+  border-radius: 7px;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.menu .item {
+  float: left;
+}
+
+a {
+  padding: 10px 10px;
+  background: black;
+  text-decoration: none;
+  display: block;
+  color: black;
+
+  color: white;
+  margin-left: 10px;
+  position: relative;
+  right: 20%;
+}
+
+.menu .desple {
+  display: none;
+  position: absolute;
+  min-width: 93px;
+}
+
+.menu .item:hover .desple {
+  display: block;
+}
+
+a:hover {
+  background: blue;
+}
